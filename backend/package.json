@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server.js",
+  "scripts": {
+    "start": "babel src -w --out-dir dist",
+    "dev-serve": "nodemon dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.16.7",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^5.0.0-alpha.8",
+    "express-fileupload": "^1.2.1",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "sequelize": "^7.0.0-alpha.4",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.15.6",
+    "nodemon": "^2.0.13"
+  }
+}
